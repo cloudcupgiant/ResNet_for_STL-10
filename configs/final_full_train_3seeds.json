@@ -1,0 +1,184 @@
+{
+  "experiments": [
+    {
+      "name": "final_small_resnet18_sgd_cosine_full_run1",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_small_resnet18_sgd_cosine_full_run2",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_small_resnet18_sgd_cosine_full_run3",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_shufflenetv2_x1_sgd_step_full_run1",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_shufflenetv2_x1_sgd_step_full_run2",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_shufflenetv2_x1_sgd_step_full_run3",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_efficientnet_b0_sgd_cosine_full_run1",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "se_activation": "sigmoid",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_efficientnet_b0_sgd_cosine_full_run2",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "se_activation": "sigmoid",
+        "random_seed": true
+      }
+    },
+    {
+      "name": "final_efficientnet_b0_sgd_cosine_full_run3",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "valid_ratio": 0,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "se_activation": "sigmoid",
+        "random_seed": true
+      }
+    }
+  ]
+}
