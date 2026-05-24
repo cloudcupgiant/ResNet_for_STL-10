@@ -1,0 +1,543 @@
+{
+  "experiments": [
+    {
+      "name": "exp0_baseline",
+      "args": {
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "weak",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.0,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp1_augmentation",
+      "args": {
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.0,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp2_regularization",
+      "args": {
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp3_steplr",
+      "args": {
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp3_cosine",
+      "args": {
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp4_shufflenetv2_x1",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.0,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp5_efficientnet_b0",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.0,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp7_shufflenetv2_x1_regularization",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp8_efficientnet_b0_regularization",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp10_shufflenetv2_x1_cosine",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp11_efficientnet_b0_cosine",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp13_shufflenetv2_x1_steplr",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp14_efficientnet_b0_steplr",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "step",
+        "step_size": 50,
+        "gamma": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp21_efficientnet_b0_adamw_cosine_lr1e-3",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "adamw",
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "scheduler": "cosine",
+        "warmup_epochs": 0,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp22_efficientnet_b0_adamw_cosine_warmup_lr1e-3",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "adamw",
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "scheduler": "cosine",
+        "warmup_epochs": 5,
+        "warmup_start_factor": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp23_efficientnet_b0_adamw_cosine_warmup_lr3e-4",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "adamw",
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "scheduler": "cosine",
+        "warmup_epochs": 5,
+        "warmup_start_factor": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp24_efficientnet_b0_sgd_cosine_warmup_lr0_02",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.02,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "scheduler": "cosine",
+        "warmup_epochs": 5,
+        "warmup_start_factor": 0.1,
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp25_small_resnet18_l1_regularization",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "l1_lambda": 1e-06,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp26_shufflenetv2_x1_l1_regularization",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "l1_lambda": 1e-06,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp27_efficientnet_b0_l1_regularization",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "l1_lambda": 1e-06,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp29_small_resnet18_l2_regularization_rerun",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp30_shufflenetv2_x1_l2_regularization_rerun",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp31_efficientnet_b0_l2_regularization_rerun",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp33_small_resnet18_l1_dropout0",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "l1_lambda": 1e-06,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp34_small_resnet18_l1_dropout0_2",
+      "args": {
+        "model": "small_resnet18",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0,
+        "l1_lambda": 1e-06,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp35_shufflenetv2_x1_l2_dropout0",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp36_shufflenetv2_x1_l2_dropout0_2",
+      "args": {
+        "model": "shufflenetv2_x1_0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp37_efficientnet_b0_l2_dropout0",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.0,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    },
+    {
+      "name": "exp38_efficientnet_b0_l2_dropout0_2",
+      "args": {
+        "model": "efficientnet_b0",
+        "epochs": 150,
+        "batch_size": 64,
+        "augmentation": "strong",
+        "optimizer": "sgd",
+        "lr": 0.05,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "l1_lambda": 0.0,
+        "scheduler": "none",
+        "dropout": 0.2,
+        "label_smoothing": 0.1,
+        "activation": "relu",
+        "seed": 42
+      }
+    }
+  ]
+}
